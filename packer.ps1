@@ -5,8 +5,7 @@ Add-Type -AssemblyName System.Drawing
 # Function to list all character folders from both def\Characters and Mods
 function Get-CharacterFolders {
     $characterPaths = @(
-        "$env:userprofile\appdata\locallow\Proxima\Custom User Data\def\Characters",
-        "$env:userprofile\appdata\locallow\Proxima\Mods"
+        "$env:userprofile\appdata\locallow\Proxima\Custom User Data\def\Characters"
     )
     $allFolders = @()
     foreach ($path in $characterPaths) {
